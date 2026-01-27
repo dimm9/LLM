@@ -14,7 +14,6 @@ from pypdf import PdfReader
 from lab2.chat_once import chat_once
 from lab4.embeddings import simple_chunk, embed_texts, df, embedder
 
-
 def load_pdf(path):
     rows = []; r = PdfReader(path)
     for i, p in enumerate(r.pages, start=1):
